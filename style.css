@@ -324,3 +324,37 @@ nav {
         display: none;
     }
 }
+
+.form {
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  opacity: 0;
+  transform: translateX(100%);
+  position: absolute;
+  width: 100%;
+}
+
+.form.active {
+  opacity: 1;
+  transform: translateX(0);
+  position: relative;
+}
+
+.slide-in-right {
+  transform: translateX(100%);
+  opacity: 0;
+}
+
+.slide-out-left {
+  transform: translateX(-100%);
+  opacity: 0;
+}
+
+.slide-in-left {
+  transform: translateX(-100%);
+  opacity: 0;
+}
+
+.slide-out-right {
+  transform: translateX(100%);
+  opacity: 0;
+}
